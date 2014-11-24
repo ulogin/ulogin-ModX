@@ -1,0 +1,22 @@
+.messagePanel.error{
+    color: red;
+}
+.messagePanel.success{
+    color: green;
+}
+.messagePanel .title {
+    font-size: 18px;
+    font-weight: 800;
+}
+.messagePanel .message {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.ulogin_provider {
+    margin-right: 10px;
+    display: inline-block;
+}
+.can_delete .ulogin_provider {
+    cursor: pointer;
+}

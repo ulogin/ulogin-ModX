@@ -1,0 +1,1 @@
+<div data-ulogin-network='[[+network]]' class='ulogin_provider big_provider [[+network]]_big' [[+no_delete:eq=`1`:then=``:else=`onclick="uloginDeleteAccount('[[+network]]')"`]]></div>
