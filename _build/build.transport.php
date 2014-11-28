@@ -15,7 +15,7 @@ $pkg_name = 'uLogin';
 define('PKG_NAME',$pkg_name);
 define('PKG_NAME_LOWER',strtolower(PKG_NAME));
 define('NAMESPACE_NAME', PKG_NAME_LOWER);
-define('PKG_VERSION','2.0.0');
+define('PKG_VERSION','2.0.1');
 define('PKG_RELEASE','pl');
 
 /* define build paths */

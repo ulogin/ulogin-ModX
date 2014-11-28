@@ -450,7 +450,7 @@ class uLogin {
         if (empty($modxProfile->gender) && $u_data['sex']>0) $modxProfile->set('gender', ($u_data['sex'] == '1' ? '2' : '1'));
         if (empty($modxProfile->country) && isset($u_data['country'])) $modxProfile->set('country', $u_data['country']);
         if (empty($modxProfile->city) && isset($u_data['city'])) $modxProfile->set('city', $u_data['city']);
-        if (empty($modxProfile->website) && isset($u_data['website'])) $modxProfile->set('website', $u_data['website']);
+        if (empty($modxProfile->website) && isset($u_data['profile'])) $modxProfile->set('website', $u_data['profile']);
         if (empty($modxProfile->photo) && isset($u_data['photo_big'])) $modxProfile->set('photo', $u_data['photo_big']);
         if (empty($modxProfile->mobilephone) && isset($u_data['phone'])) $modxProfile->set('phone', $u_data['phone']);
         $modxProfile->save();
@@ -488,7 +488,7 @@ class uLogin {
             'gender' => isset($UserData['Gender']) ? $UserData['Gender'] : '',
             'country' => isset($u_data['country']) ? $u_data['country'] : '',
             'city' => isset($u_data['city']) ? $u_data['city'] : '',
-            'website' => isset($u_data['identity']) ? $u_data['identity'] : '',
+            'website' => isset($u_data['profile']) ? $u_data['profile'] : '',
             'photo' => isset($u_data['photo_big']) ? $u_data['photo_big'] : '',
             'mobilephone' => isset($u_data['phone']) ? $u_data['phone'] : '',
         ));
